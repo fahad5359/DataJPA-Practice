@@ -8,7 +8,8 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class DataJpaApplication {
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         SpringApplication.run(DataJpaApplication.class, args);
     }
    @Bean
@@ -16,14 +17,14 @@ public class DataJpaApplication {
         return (args -> {
             newEmplyees(rpstry);
             System.out.println(rpstry.findAll());
-
-
         });
     }
 
 
-//    Here we  create the method  that Creates employeez
-//    so it gose through Our Entity class and  creates a new  emlyee oout oof it
+//    Here we  create the method  that Creates employees
+
+//So as  we pre difined our Repository that is the "EmployeeRepository", we made it go through  our  Entity Class-
+//  So WE give the Method Bllow some Value (based on the Schema we created), after that the method go To the Repository.
     private void newEmplyees(EmployeeRepository rpstry){
         rpstry.save(new Employee("Ahmad","Ali"));
         rpstry.save(new Employee("Naif","Ahmad"));

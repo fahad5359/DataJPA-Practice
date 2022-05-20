@@ -31,3 +31,7 @@ build/
 
 ### VS Code ###
 .vscode/
+data/dadabasse.mv.db
+data/dadabasse.trace.db
+data/fadbase.mv.db
+data/fadbase.trace.db
