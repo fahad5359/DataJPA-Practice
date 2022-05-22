@@ -8,5 +8,5 @@ import java.util.List;
 public interface EmployeeRepository extends CrudRepository <Employee, Long>{
 //    we create a method that do stuff for us, SpringData JPA dose allot of  good commands for us, and we dont need to
 //    Write our own query...
-        List<Employee>  fi
+        List<Employee>  findEmployeeByFirstNameAnd(String stonk);
 }

@@ -15,8 +15,9 @@ public class DataJpaApplication {
    @Bean
     public CommandLineRunner run(EmployeeRepository rpstry){
         return (args -> {
-            newEmplyees(rpstry);
-            System.out.println(rpstry.findAll());
+//            newEmplyees(rpstry);
+//            System.out.println(rpstry.findAll());
+            System.out.println(rpstry.findEmployeeByFirstNameAnd(""));
         });
     }
 
