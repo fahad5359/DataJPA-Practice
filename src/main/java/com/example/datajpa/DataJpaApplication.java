@@ -15,9 +15,9 @@ public class DataJpaApplication {
    @Bean
     public CommandLineRunner run(EmployeeRepository rpstry){
         return (args -> {
-//            newEmplyees(rpstry);
-//            System.out.println(rpstry.findAll());
-            System.out.println(rpstry.findEmployeeByFirstNameAnd(""));
+            newEemplyees(rpstry);
+
+            System.out.println(rpstry.findAll());
         });
     }
 
@@ -26,10 +26,13 @@ public class DataJpaApplication {
 
 //So as  we pre difined our Repository that is the "EmployeeRepository", we made it go through  our  Entity Class-
 //  So WE give the Method Bllow some Value (based on the Schema we created), after that the method go To the Repository.
-    private void newEmplyees(EmployeeRepository rpstry){
-        rpstry.save(new Employee("Ahmad","Ali"));
+    private void newEemplyees(EmployeeRepository rpstry){
+        rpstry.save(new Employee("kalhid","Ali"));
         rpstry.save(new Employee("Naif","Ahmad"));
-        rpstry.save(new Employee("Mohammed","rashed"));
+        rpstry.save(new Employee("Moham","rashed"));
         rpstry.save(new Employee("rashed","abdullah"));
+        rpstry.save(new Employee("fahad", "Abdullah"));
+        rpstry.save(new Employee("Ashtar", "halong"));
+
     }
 }

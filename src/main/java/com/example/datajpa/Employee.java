@@ -8,7 +8,7 @@ import javax.persistence.Id;
 @Entity
 public class Employee {
 
-//    I  think The     @Id and @GeneratedValue Generate the value of our ID Without me Writing it
+//    I  think The     @Id and @GeneratedValue Generate the value atomaticly of our ID Without me Writing it
     @Id
     @GeneratedValue
     private long id;
